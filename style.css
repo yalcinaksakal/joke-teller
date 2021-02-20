@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #040202;
+}
+.container {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* background: url("./robottalk.gif");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat; */
+}
+
+.robot {
+  height: 30%;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 5px 15px 1px #45badd;
+  margin-bottom: 40px;
+}
+audio {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 180px;
+  height: 50px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background: #3982dc;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* ------------------------------ */
+/* spinner */
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  transform: translate(-32px);
+  border: 2px solid#040202; /* Light grey */
+  border-top: 2px solid #3982dc; /* Blue */
+  border-radius: 50%;
+  margin: 18px 18px;
+  padding: 0.5rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+/* media query  
+@media screen and (max-width:1000px){
+  .container{
+    background-position: center center;
+    background-size: cover;
+  } 
+button {
+  box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+}
+
+ 
+}
+
+
+*/
